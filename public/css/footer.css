@@ -1,0 +1,28 @@
+
+:root {
+    --col_orange: rgb(227 127 55);
+    --col_red: rgb(210 66 75);
+  }
+/**********footer**************/
+.footer-end{
+    background: var(--col_orange);
+    display: flex;
+}
+.footer-contact-1-1{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer-contact-1-2 ul {
+    padding: 0;
+    text-align: start;
+    width: 420px;
+}
+.footer-contact-1-2 li {
+    list-style: none;
+}
+.footer-contact-1-2 li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}

@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --col_orange: rgb(227 127 55);
+    --col_red: rgb(210 66 75);
+  }
+body{
+    background: #fff;
+}
+/****************Content**********************/
+h2{
+    color: var(--col_red);
+    text-align: center;
+}
+/***********Content *****************/
+.content-bst-box{
+    display: flex;
+}
+.content-bst-box .content-bst-box-1{
+    padding: 0px 10px;
+}
+.content-bst-box-1 .hs-content-bst-text{
+    background: rgb(231 229 229);
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: 500;
+    border: 2px rgb(104, 102, 103) solid;
+}
+
+
+/* For 1024 Resolution */  
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
+
+}
+ /* For 1366 Resolution  */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) { 
+
+}
+/* Others */
+@media only screen and (min-width: 1370px) and (max-width: 1605px) { 
+
+}
+
+/* iPad */
+/* Orientation : Landscape */  
+@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {     
+    
+}      
+/* Orientation : Portrait */  
+@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {  
+      
+}
+/*  Mobile  */
+/* For 480 Resolution */  
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+    /****** content*********/
+    .content-bst-box{
+        display: block; 
+    }
+}
