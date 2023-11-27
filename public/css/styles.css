@@ -89,7 +89,7 @@ body{
     z-index: 1;
 }
 .nav-item{
-    border-right: #fff solid 1px;
+    border-left: #fff solid 1px;
 }
 .navbar .navbar-nav .nav-link:hover{
     color: var(--col_red);
@@ -98,7 +98,7 @@ body{
     color: var(--col_red);
 }
 .navbar .navbar-nav .nav-link{
-   padding: 10px 26px 10px 26px;
+   padding: 10px 32px 10px 32px;
    color: #fff;
    font-weight: 600;
    font-size: 16px;
@@ -111,6 +111,7 @@ body{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transition: top 0.3s;
 }
 
 .dropdown-menu a {
@@ -151,18 +152,23 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
-#navbar-toggle .fa-bars{
+#navbar-toggle .fa-bars, #navbar-toggle .fa-xmark{
     border: solid 1px #fff ;
     /* padding: 5px; */
-    /* color: #fff; */
+    color: var(--col_orange);
     font-size: 30px;
 }
 
 
 /**********footer**************/
-.footer-end{
+.footer-bg{
     background: var(--col_orange);
+}
+.footer-end{
     display: flex;
+}
+.footer-contact{
+    padding: 0 10px;
 }
 .footer-contact-1-1{
     color: #fff;
@@ -339,7 +345,7 @@ body{
     }
     .navbar .navbar-nav .nav-link {
         padding: 10px 26px 10px 26px;
-        color: var(--col_red);
+        /* color: var(--col_red); */
         font-weight: 600;
         font-size: 16px;
     }
@@ -376,6 +382,10 @@ body{
     }
     #navbar-toggle {
         display: block;
+    }
+    
+    .canvas-container{
+        margin-top: 50px;
     }
     .footer-end{
         display: none;

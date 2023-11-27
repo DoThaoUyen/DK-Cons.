@@ -22,17 +22,15 @@ h6{
     display: flex;
     padding-bottom: 1rem;
 }
-.content-1-box .content-1-box-1{
+.content-1-box-1{
     width:30%;
-    height: 100%;
     box-sizing:border-box;
     background: #fff;
     border: 1px solid #b7b7b7; 
-    text-align: center;
-    margin: 10px;
+    margin: 5px 20px 5px 20px;
+    
 }
 .content-1-box-1 .hs-content-1{
-    /* background: rgb(104, 102, 103); */
     padding: 20px 0px;
     text-align: center;
 }

@@ -10,8 +10,11 @@ body{
 }
 /****************Content**********************/
 h2{
-    color: var(--col_red);
+    font-weight: 800;
+    font-family: auto;
+    text-transform: uppercase;
     text-align: center;
+    color: var(--col_red);
 }
 /***********Content 1*****************/
 h6{
@@ -19,20 +22,13 @@ h6{
 }
 /***********Content 2*****************/
 .content-2-text{
-    color: var(--col_red);
     text-align: center;
 }
 .content-2-box{
     display: flex;
 }
-.content-2-box .content-2-box-1{
+.content-2-box {
     padding: 0px 10px;
-}
-.content-2-box-1 .hs-content-2-text{
-    /* background: rgb(104, 102, 103); */
-    padding: 20px 0px;
-    text-align: center;
-    font-weight: 500;
 }
 
 
@@ -61,10 +57,6 @@ h6{
 /*  Mobile  */
 /* For 480 Resolution */  
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
-    /****** content2*********/
-    .content-2-box{
-        display: block; 
-    }
     /****** content2*********/
     .content-2-box{
         display: block; 

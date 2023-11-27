@@ -20,11 +20,12 @@ html{
 }
 .content-1 .cont-pic .content-1-pic img{
     max-width: 100%;
-    padding-right: 20px;
+    padding: 0 10px;
 }
-.content-1 .content-1-title h4{
+.content-1 .content-1-title h2{
     color: var(--col_red);
     font-weight: 500;
+    text-transform: uppercase;
 }
 .content-1 .content-1-title p{
     color: rgb(227 127 55);
@@ -47,7 +48,7 @@ html{
 }
 .content-2 .silde-pic-2 .content-2-pic img{
     max-width: 100%;
-    padding-right: 20px;
+    padding: 0 10px;
 }
 .slide-dot-content-2 .slide-dot-2 {
     cursor: pointer;
@@ -71,7 +72,9 @@ html{
 }
 .content-2 .content-2-text h2{
     color: var(--col_red);
-    font-weight: 500;
+    font-weight: 800;
+    font-family: auto;
+    text-transform: uppercase;
 }
 .content-2 .content-2-text p{
     color: #000;
@@ -116,7 +119,9 @@ html{
 }
 .content-3 .content-3-text h2{
     color: var(--col_red);
-    font-weight: 500;
+    font-weight: 800;
+    font-family: auto;
+    text-transform: uppercase;
 }
 .content-3 .content-3-text p{
     color: #000;
@@ -131,21 +136,26 @@ html{
     padding: 10px 20px;
 } 
 /*************Content 4***********/
+.content-4 .content-4-text .text-cnt{
+    font-size: 32px;
+}
 .content-4 .content-4-text .text-cnt-0{
     font-weight: 500;
 }
 .content-4 .content-4-text .text-cnt-1{
     color: var(--col_red);
     font-weight: 800;
-    font-size: 22px;
+    /* font-size: 22px; */
     font-family: auto;
+    text-transform: uppercase;
 }
 .content-4 .content-4-text .text-cnt-2{
     color: var(--col_orange);
     font-weight: 800;
     font-style: italic;
-    font-size: 22px;
+    /* font-size: 22px; */
     font-family: ui-monospace;
+    text-transform: uppercase;
 }
 /*************Content 5***********/
 .content-5 .content-5-btn{
@@ -157,17 +167,19 @@ html{
     color: #fff;
     margin-top: 5px;
     border: #fff 1px solid;
-    padding: 10px 10px;
-    font-size: 12px;
+    padding: 18px 18px;
+    font-size: 15px;
 }
 .content-5 .content-5-text{
     margin-top: 10px;
 }
-.content-5 .content-5-text h4{
-    color: var(--col_orange);
-    font-weight: 600;
+.content-5 .content-5-text h2{
+    color: var(--col_red);
+    font-weight: 800;
+    font-family: auto;
     text-align: center;
     margin-top: 10px;
+    text-transform: uppercase;
 }
 .content-5 .pic-5{
     display: flex;
@@ -233,8 +245,13 @@ html{
 }
 /***********Content 7*****************/
 .content-7-text{
-    color: var(--col_red);
     text-align: center;
+}
+.content-7-text h2{
+    color: var(--col_red);
+    font-weight: 800;
+    font-family: auto;
+    text-transform: uppercase;
 }
 .content-7-box{
     display: flex;
@@ -277,7 +294,7 @@ html{
     /****** content1*********/
     .content-1 .cont-pic{
         /* display: block; */
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .content-2 .silde-pic-2 {
         /* display: block; */

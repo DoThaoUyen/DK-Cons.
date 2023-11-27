@@ -12,6 +12,10 @@ body{
 h2{
     color: var(--col_red);
     text-align: center;
+    font-weight: 800;
+    font-family: auto;
+    text-transform: uppercase;
+
 }
 /***********Content 1*****************/
 h6{
@@ -19,10 +23,6 @@ h6{
 }
 /***********Content san pham 1*****************/
 /*********Part com*************/
-#san-pham-1 .content-2-text{
-    color: var(--col_red);
-    text-align: center;
-}
 #san-pham-1 h6{
     color: var(--col_red);
     font-weight: 500;
@@ -40,10 +40,6 @@ h6{
 
 /***********Content san pham 2*****************/
 /*********Part com*************/
-#san-pham-2 .content-2-text{
-    color: var(--col_red);
-    text-align: center;
-}
 #san-pham-2 h6{
     color: var(--col_red);
     font-weight: 500;

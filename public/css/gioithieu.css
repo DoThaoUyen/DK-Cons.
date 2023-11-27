@@ -11,17 +11,16 @@ body{
 /****************Content**********************/
 h2{
     color: var(--col_red);
+    font-weight: 800;
+    font-family: auto;
     text-align: center;
+    text-transform: uppercase;
 }
 /***********Content 1*****************/
 h6{
     font-weight: 600;
 }
 /***********Content 2*****************/
-.content-2-text{
-    color: var(--col_red);
-    text-align: center;
-}
 .content-2-box{
     display: flex;
 }
