@@ -3,13 +3,6 @@ window.onload = function(){
     var l_height = document.body.scrollHeight;
     parent.postMessage(l_height,'*');
 }
-// window.addEventListener('message', function(m){
-//     // document.getElementById('message').scrollHeight = document.body.scrollHeight + "px";
-//     document.getElementById('message').scrollHeight = m.currentTarget.document.body.scrollHeight + "px"
-//     console.log(m.currentTarget.document.body.scrollHeight)
-//   }, false)
-
-
 //ẩn hiện nội dung
 let slide_Dis_Hid = 0;
 const _txt_desc = document.querySelector('.txt-desc'); 

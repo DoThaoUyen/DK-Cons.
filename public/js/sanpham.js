@@ -1,14 +1,8 @@
 const _l_sp_1 = document.getElementById('san-pham-1');
 const _l_sp_2 = document.getElementById('san-pham-2');
 let l_check = 0;
-
-
-// window.onload = function(){
-//     var l_height = document.body.scrollHeight;
-//     parent.postMessage(l_height,'*');
-// }
 window.addEventListener('message', function(e){
-    console.log(e);
+    // console.log(e);
     if(e.data == 'san-pham-1'){
         l_check = 0;
     }
