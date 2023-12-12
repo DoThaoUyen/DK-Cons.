@@ -7,28 +7,24 @@
   }
 body{
     background: #fff;
+    font-family: sans-serif;
 }
 .canvas-container{
     position: relative;
     /* padding-bottom: 50%; */
-    height: 0;
-    margin-top: 20px;
-    overflow: hidden;
+    /* margin-top: 20px; */
+    overflow: visible;
 }
 .canvas-container iframe{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
-/* .nerds-iframe {
-    height: calc(100vh - 95px) !important;
-    width: 100% !important;
-  } */
-/*********** header ************/
+/*********** css của phần header  ************/
 .top-header{
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
 }
 .header-1-logo{
     /* width: 25%; */
@@ -40,8 +36,8 @@ body{
     position: relative;
     z-index: 9;
 }
-.header-search, .header-1-btn{
-    margin-top: 10%;
+.header-1-search, .header-1-btn{
+    margin-top: 3%;
 }
 .header-search input {
     padding: 5px;
@@ -72,7 +68,8 @@ body{
     border-radius: 5px; 
     color: var(--col_orange);
     padding: 10px 10px;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 15px;
 }
 .header-1-btn .btnDKTV:hover, .header-1-btn .btnDKBG:hover{
     background: rgba(211 209 209 0.5);
@@ -100,10 +97,10 @@ body{
 .navbar .navbar-nav .nav-link{
    padding: 10px 32px 10px 32px;
    color: #fff;
-   font-weight: 600;
-   font-size: 16px;
+   font-weight: bold;
+   font-size: 15px;
 }
-/****** drop menu *****/
+/****** drop menu : sản phẩm*****/
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -113,14 +110,12 @@ body{
     z-index: 1;
     transition: top 0.3s;
 }
-
 .dropdown-menu a {
     color: #fff;
     padding: 5px 16px 0px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-menu a:hover {
     /* background-color: #f1f1f1 */
     color: var(--col_red);
@@ -133,21 +128,25 @@ body{
     display: block;
 }
 /****** drop menu end*****/
-/******** Slide Down a Bar on Scroll *********/
+/******** Slide Down a Bar on Scroll : thanh menu đi theo khi lượt xuống dưới*********/
 #navbar-menu{
     position: relative;
     width: 100%;
     display: block;
     transition: top 0.3s;
     z-index: 1;
+    height: 150px;
 }
 /******** Slide Down a Bar on Scroll END*********/
 /***** header-menu end *****/
 /*********** header end ************/
+#clk_menu{
+    display: none;
+}
 #navbar-toggle {
     display: none;
     color: #000;
-    text-align: right;
+    text-align: center;
     /* padding: 10px; */
     font-size: 20px;
     cursor: pointer;
@@ -160,20 +159,21 @@ body{
 }
 
 
-/**********footer**************/
+/**********footer : bao gồm các thông tin liên hệ của page**************/
 .footer-bg{
     background: var(--col_orange);
 }
 .footer-end{
-    display: flex;
+    /* display: flex; */
 }
 .footer-contact{
-    padding: 0 10px;
+    /* padding: 0 10px; */
+    overflow: auto;
 }
 .footer-contact-1-1{
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: bold;
 }
 .footer-contact-1-2 ul {
     padding: 0;
@@ -185,148 +185,202 @@ body{
 }
 .footer-contact-1-2 li a{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
     color: #000;
 }
-
-/* For 1024 Resolution */  
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
-    /* .header-text-1 .header-text-1-left{
-        font-size: 10px;
-    }
-    .navbar-nav {
-        flex-direction: column;
-        text-align: left; 
-        display: none;
-    } 
-    #navbar-menu{
-        display: block;
-        transition: top 0.3s;
-    }
-    #navbar-toggle {
-        display: block;
-    } */
-
+.giuseart-contact-bar{
+    /* display:none  */
 }
- /* For 1366 Resolution  */
-@media only screen and (min-width: 1030px) and (max-width: 1366px) { 
-    /* .header-text-1 .header-text-1-left{
-        font-size: 10px;
-    }
-    .navbar-nav {
-        flex-direction: column;
-        text-align: left; 
-        display: none;
-    } 
-    #navbar-menu{
-        display: block;
-        transition: top 0.3s;
-    }
-    #navbar-toggle {
-        display: block;
-    } */
-
+.giuseart-contact-bar{
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 998;
+    margin-bottom:0
 }
-/* Others */
-@media only screen and (min-width: 1370px) and (max-width: 5005px) { 
-    .header-1-logo{
-        width: 18%;
-    }
+.giuseart-contact-bar li{
+    width: 44px;
+    height: 46px;
+    overflow: hidden;
+    margin-bottom: 0;
+    list-style: none;
 }
-
-/* iPad */
-/* Orientation : Landscape */  
-@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {   
-    .header-text-1 .header-text-1-left{
-        font-size: 10px;
-    }
-    .navbar-nav {
-        flex-direction: column;
-        text-align: left; 
-        display: none;
-    } 
-    #navbar-menu{
-        /* position: fixed; */
-        /* width: 30%; */
-        display: block;
-        transition: top 0.3s;
-    }
-    #navbar-toggle {
-        display: block;
-    }  
-    
-}      
-/* Orientation : Portrait */  
-@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {  
-    .header-text-1 .header-text-1-left{
-        font-size: 10px;
-    }
-    .navbar-nav {
-        flex-direction: column;
-        text-align: left; 
-        display: none;
-    } 
-    #navbar-menu{
-        /* position: fixed; */
-        /* width: 30%; */
-        display: block;
-        transition: top 0.3s;
-    }
-    #navbar-toggle {
-        display: block;
-    }
-    .header-search input{
-        width: 70%;
-    }
-    .header-search button{
-        width: 15%;
-    }
+.giuseart-contact-bar li.facebook{
+    margin-bottom: 8px;
+    background: url(https://giuseart.com/wp-content/uploads/2020/03/fb.png);
+    background-repeat: no-repeat;
+}
+.giuseart-contact-bar li.zalo{
+    background: url(https://giuseart.com/wp-content/uploads/2020/03/zl.png);    
+    background-repeat: no-repeat;
+}
+.giuseart-contact-bar li a{
+    display: block;
+    width: 44px;
+    height: 44px;
+}
+/****For 1366 Resolution ****/
+@media only screen and (min-width: 1007px) and (max-width: 1360px) { 
     .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
-        padding: 5px 5px;
-        font-size: 11px;
+        padding: 10px 10px;
+        font-size: 12px;
     }
-      
+    .navbar .navbar-nav .nav-link{
+        /* padding: 10px 20px 10px 20px; */
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}       
+@media only screen and (min-width: 1100px) and (max-width: 1200px) { 
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .navbar .navbar-nav .nav-link{
+        padding: 10px 20px 10px 20px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}                                                          
+/****Others ****/ 
+@media only screen and (min-width: 1370px) and (max-width: 1606px) { 
+
 }
-/*  Mobile  */
-/* For 480 Resolution */  
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* navbar */
-    /* .header-1-logo img{
-        width: 100px;
-        height: 50px;
-    } */
-    
+
+/****iPad ****/ 
+@media only screen and (max-width: 499px) {
+    .giuseart-contact-bar{
+        left: 10px;
+        bottom: 10px;
+        position: fixed;
+        z-index: 998;
+        margin-bottom:0;
+        display:block !Important
+    }
+    .giuseart-contact-bar li{
+        display:inline-block;
+        float:left;
+        margin-right:7px;
+        list-style:none
+    }
+}
+
+/****For 1024 Resolution ****/ 
+@media only screen and (min-width : 993px) and (max-width : 1029px) { 
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .navbar .navbar-nav .nav-link{
+        padding: 10px 20px 10px 20px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    #clk_menu, #navbar-toggle{
+        /* display: none; */
+    }
+    .header-1-search{
+        margin-top: 3%;
+    }
     .header-1-btn{
+        margin-top: 3%;
+    }
+    .canvas-container{
+        margin-top: 20px;
+    }
+}
+/****For 1024 Resolution ****/ 
+@media only screen and (min-width : 760px) and (max-width : 992px) { 
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center; 
+        display: none;
+    } 
+    #navbar-toggle {
+        display: block;
+        font-size: 10px;
+    }
+    #clk_menu, #navbar-toggle{
+        display: block;
+    }
+    .header-1-search{
         margin-top: 5%;
     }
-    .header-search input {
-        padding: 5px;
-        font-size: 12px;
-        border: 1px solid grey;
-        float: left;
-        width: 70%;
-        background: #f1f1f1;
+    .header-1-btn{
+        /* margin-top: 3%; */
+        position: absolute;
+        bottom: 20px;
+        text-align: end;
+         /* right: 0; */
     }
-    .header-search button {
-        float: left;
-        width: 10%;
-        padding: 5px;
-        background: var(--col_orange);
-        color: white;
-        font-size: 12px;
-        border: 1px solid grey;
-        border-left: none;
-        cursor: pointer;
+    .canvas-container{
+        margin-top: 20px;
+    }
+}
+/****Orientation : Landscape ****/ 
+@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {     
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center; 
+        display: none;
+    } 
+   
+    #clk_menu, #navbar-toggle{
+        display: block;
     }
     .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
-        text-decoration: none;
-        background: rgb(211 209 209);
-        border: 1px solid #fff;
-        border-radius: 5px; 
-        color: var(--col_orange);
-        padding: 5px 10px;
-        font-weight: 500;
+        padding: 10px 10px;
+        font-size: 13px;
     }
+    .canvas-container{
+        margin-top: 20px;
+    }
+    .header-1-search{
+        margin-top: 5%;
+    }
+    .header-1-btn{
+        margin-top: 3%;
+        position: absolute;
+        bottom: 20px;
+        text-align: end;
+         right: 0;
+    }
+}      
+/****Orientation : Portrait ****/ 
+@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {  
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center; 
+        display: none;
+    } 
+    #clk_menu, #navbar-toggle{
+        display: block;
+    }
+    .canvas-container{
+        margin-top: 20px;
+    }
+    .header-1-btn{
+        margin-top: 3%;
+        position: absolute;
+        /* bottom: 20px; */
+        text-align: end;
+         right: 0;
+    }
+}
+/**** Mobile  ****/ 
+/****For 480 Resolution ****/ 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .navbar-nav {
         flex-direction: column;
         text-align: center; 
@@ -337,17 +391,28 @@ body{
         /* width: 30%; */
         display: block;
         transition: top 0.3s;
+        height: 110px;
     }
     #navbar-toggle {
         display: block;
+        font-size: 10px;
     }
-    .navbar .navbar-nav .nav-link {
-        padding: 10px 26px 10px 26px;
-        /* color: var(--col_red); */
-        font-weight: 600;
-        font-size: 16px;
+    #clk_menu, #navbar-toggle{
+        display: block;
     }
-
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 7px 7px;
+        font-size: 12px;
+    }
+    .header-1-btn{
+        /* margin-top: 3%; */
+        position: absolute;
+        bottom: 20px;
+        text-align: end;
+    }
+    .canvas-container{
+        margin-top: 0px;
+    }
     footer .footer-end{
         display: block; 
         overflow: hidden;
@@ -361,15 +426,11 @@ body{
         width: 350px;
     }
 }
-/* For 640 Resolution */  
+/****For 640 Resolution ****/ 
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
-    /* navbar */
-    .header-text-1 .header-text-1-left{
-        font-size: 10px;
-    }
     .navbar-nav {
         flex-direction: column;
-        text-align: left; 
+        text-align: center; 
         display: none;
     } 
     #navbar-menu{
@@ -377,22 +438,52 @@ body{
         /* width: 30%; */
         display: block;
         transition: top 0.3s;
+        height: 110px;
     }
     #navbar-toggle {
         display: block;
+        font-size: 10px;
     }
-    
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 7px 7px;
+        font-size: 12px;
+    }
+    #clk_menu, #navbar-toggle{
+        display: block;
+    }
+    .header-1-btn{
+        /* margin-top: 5%; */
+        position: absolute;
+        bottom: 20px;
+        text-align: end;
+    }
     .canvas-container{
-        margin-top: 50px;
+        margin-top: 0px;
     }
-    .footer-end{
-        display: none;
+} 
+@media only screen and (min-width : 641px) and (max-width : 759px) {
+    .header-1-btn .btnDKTV, .header-1-btn .btnDKBG{
+        padding: 7px 7px;
+        font-size: 12px;
     }
-    .footer-contact-1-2 ul {
-        /* padding: 0; */
-        /* text-align: start; */
-        /* width: 250px; */
-        width: 300px;
+    #navbar-toggle {
+        display: block;
+        font-size: 10px;
     }
-
+    #clk_menu, #navbar-toggle{
+        display: block;
+    }
+    #navbar-menu{
+        /* display: none; */
+    }
+    .header-1-btn{
+        /* margin-top: 5%; */
+        position: absolute;
+        bottom: 20px;
+        text-align: end;
+    }
+    .canvas-container{
+        margin-top: 20px;
+    }
 }
+

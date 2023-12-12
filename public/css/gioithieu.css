@@ -7,31 +7,34 @@
   }
 body{
     background: #fff;
+    font-family: sans-serif;
 }
 /****************Content**********************/
 h2{
     color: var(--col_red);
-    font-weight: 800;
-    font-family: auto;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
+.content-1 p{
+    overflow: auto;
+}
 /***********Content 1*****************/
 h6{
-    font-weight: 600;
+    font-weight: bold;
 }
 /***********Content 2*****************/
 .content-2-box{
     display: flex;
 }
 .content-2-box .content-2-box-1{
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
 }
 .content-2-box-1 .hs-content-2-text{
     /* background: rgb(104, 102, 103); */
     padding: 20px 0px;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 
@@ -60,10 +63,6 @@ h6{
 /*  Mobile  */
 /* For 480 Resolution */  
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
-    /****** content2*********/
-    .content-2-box{
-        display: block; 
-    }
     /****** content2*********/
     .content-2-box{
         display: block; 

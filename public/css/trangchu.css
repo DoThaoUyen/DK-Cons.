@@ -7,6 +7,7 @@
   }
 body{
     background: #fff;
+    font-family: sans-serif;
     /* height: 100%; */
 }
 html{
@@ -20,16 +21,16 @@ html{
 }
 .content-1 .cont-pic .content-1-pic img{
     max-width: 100%;
-    padding: 0 10px;
+    /* padding-right: 10px; */
 }
 .content-1 .content-1-title h2{
     color: var(--col_red);
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .content-1 .content-1-title p{
     color: rgb(227 127 55);
-    font-weight: 500;
+    font-weight: bold;
 }
 .content-1 .content-1-title .btnXemThem{
     text-decoration: none;
@@ -48,7 +49,7 @@ html{
 }
 .content-2 .silde-pic-2 .content-2-pic img{
     max-width: 100%;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 .slide-dot-content-2 .slide-dot-2 {
     cursor: pointer;
@@ -72,13 +73,12 @@ html{
 }
 .content-2 .content-2-text h2{
     color: var(--col_red);
-    font-weight: 800;
-    font-family: auto;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .content-2 .content-2-text p{
     color: #000;
-    /* font-weight: 500; */
+    /* font-weight: bold; */
 }
 .content-2 .content-2-btn .btnXemThem{
     text-decoration: none;
@@ -95,7 +95,7 @@ html{
 }
 .content-3 .silde-pic-3 .content-3-pic img{
     max-width: 100%;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 .slide-dot-content-3 .slide-dot-3 {
     cursor: pointer;
@@ -119,13 +119,12 @@ html{
 }
 .content-3 .content-3-text h2{
     color: var(--col_red);
-    font-weight: 800;
-    font-family: auto;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .content-3 .content-3-text p{
     color: #000;
-    /* font-weight: 500; */
+    /* font-weight: bold; */
 }
 .content-3 .content-3-btn .btnXemThem{
     text-decoration: none;
@@ -140,21 +139,18 @@ html{
     font-size: 32px;
 }
 .content-4 .content-4-text .text-cnt-0{
-    font-weight: 500;
+    font-weight: bold;
 }
 .content-4 .content-4-text .text-cnt-1{
     color: var(--col_red);
-    font-weight: 800;
+    font-weight: bold;
     /* font-size: 22px; */
-    font-family: auto;
     text-transform: uppercase;
 }
 .content-4 .content-4-text .text-cnt-2{
     color: var(--col_orange);
-    font-weight: 800;
-    font-style: italic;
+    font-weight: bold;
     /* font-size: 22px; */
-    font-family: ui-monospace;
     text-transform: uppercase;
 }
 /*************Content 5***********/
@@ -163,7 +159,7 @@ html{
 }
 .content-5 .content-5-btn .btnTuVan{
     background: var(--col_orange);
-    font-weight: 500;
+    font-weight: bold;
     color: #fff;
     margin-top: 5px;
     border: #fff 1px solid;
@@ -175,8 +171,7 @@ html{
 }
 .content-5 .content-5-text h2{
     color: var(--col_red);
-    font-weight: 800;
-    font-family: auto;
+    font-weight: bold;
     text-align: center;
     margin-top: 10px;
     text-transform: uppercase;
@@ -185,7 +180,6 @@ html{
     display: flex;
 }
 .content-5 .pic-5-pol{
-    margin: 0px 20px;
 }
 /*************Content 6***********/
 .content-6 .content-6-img {
@@ -203,7 +197,7 @@ html{
     border: #fff 1px solid;
     background: #fff;
     padding: 20px;
-    font-weight: 800;
+    font-weight: bold;
     color: var(--col_red);
 }
 .content-6-box{
@@ -228,7 +222,8 @@ html{
     font-size:36px
 }
 .content-6-box-text p {
-    font-size: 12px
+    font-size: 12px;
+    font-weight: bold;
 }
 .content-6-box .content-6-op-box:hover{
     transform: scale(1.1);
@@ -241,7 +236,8 @@ html{
     background: var(--col_red);
     border-radius: 5px; 
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    font-weight: bold;
 }
 /***********Content 7*****************/
 .content-7-text{
@@ -249,15 +245,14 @@ html{
 }
 .content-7-text h2{
     color: var(--col_red);
-    font-weight: 800;
-    font-family: auto;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .content-7-box{
     display: flex;
 }
 .content-7-box .content-7-box-1{
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
 }
 .content-7-box-1 .hs-content-7-text{
     background: rgb(104, 102, 103);

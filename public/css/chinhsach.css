@@ -7,18 +7,22 @@
   }
 body{
     background: #fff;
+    font-family: sans-serif;
 }
 /****************Content**********************/
 h2{
-    font-weight: 800;
+    font-weight: bold;
     font-family: auto;
     text-transform: uppercase;
     text-align: center;
     color: var(--col_red);
 }
 /***********Content 1*****************/
+.content-1-text{
+    overflow: auto;
+}
 h6{
-    font-weight: 600;
+    font-weight: bold;
 }
 /***********Content 2*****************/
 .content-2-text{
@@ -28,7 +32,7 @@ h6{
     display: flex;
 }
 .content-2-box {
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
 }
 
 
