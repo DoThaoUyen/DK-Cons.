@@ -1,8 +1,23 @@
-
+var l_height = 0;
+var target = '';
 window.onload = function(){
-    var l_height = document.body.scrollHeight;
-    parent.postMessage(l_height,'*');
+    l_height = document.body.scrollHeight;
+    parent.postMessage(l_height + 10,'*');
+    console.log(document.body.innerText );
 }
+window.onresize =  function() {
+    l_height = document.body.scrollHeight;
+    l_width = document.body.scrollWidth;
+    parent.postMessage(l_height + 10 ,'*');
+
+}
+
+const _btnTuVan = document.querySelector('.btnTuVan');
+_btnTuVan.addEventListener('click', function(event){
+    target = event.target.classList.value;
+    parent.postMessage(target,'*');
+    window.onload();
+});
 //ẩn hiện nội dung
 let slide_Dis_Hid = 0;
 const _txt_desc = document.querySelector('.txt-desc'); 

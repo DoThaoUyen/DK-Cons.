@@ -1,10 +1,15 @@
 var l_height = 0;
 window.onload = function(){
     l_height = document.body.scrollHeight;
-    console.log(l_height);
-    parent.postMessage(l_height,'*');
+    parent.postMessage(l_height + 10,'*');
+    console.log(l_height, l_height+10);
 }
-
+window.onresize =  function() {
+    
+    l_height = document.body.scrollHeight;
+    parent.postMessage(l_height + 10 ,'*');
+    console.log(l_height, l_height+10);
+}
 
 //active img-main
 let lastSelect;
@@ -22,3 +27,19 @@ thumbnails.forEach(sel_img => {
         lastSelect = this;
     })
 });
+// tự động nhảy ảnh
+let i = 0;
+let slideshowTimout = setTimeout(function slideshow(){
+    if(i == thumbnails.length){
+        i = 0;
+    }
+    if(lastSelect){
+        lastSelect.classList.remove('active');
+    }
+    mainPhoto.setAttribute('src', thumbnails[i].getAttribute('src'));
+    thumbnails[i].classList.add('active');
+    lastSelect = thumbnails[i];
+    i++;
+    slideshowTimout  = setTimeout(slideshow,3000);
+
+},3000);
