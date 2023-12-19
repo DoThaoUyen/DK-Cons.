@@ -178,7 +178,7 @@ body{
 .footer-contact-1-2 ul {
     padding: 0;
     text-align: start;
-    width: 420px;
+    /* width: 420px; */
 }
 .footer-contact-1-2 li {
     list-style: none;
@@ -420,7 +420,7 @@ body{
     }
     footer .footer-contact-1-2 {
         word-wrap: break-word;
-        width: 350px;
+        /* width: 350px; */
     }
     footer .footer-contact-1-2 iframe{
         width: 350px;

@@ -176,6 +176,9 @@ html{
     margin-top: 10px;
     text-transform: uppercase;
 }
+.content-5 .pic-5 h5{
+    font-weight: bold;
+}
 .content-5 .pic-5{
     display: flex;
 }
@@ -185,7 +188,7 @@ html{
 .content-6 .content-6-img {
     /* height: 500px; */
     width: 100%;
-    background-image:url(../images/pic_6.jpg) ;
+    background-image:url(../images/img_trangchu/pic_content_6.jpg) ;
     /* background-size: cover */
 }
 .content-6 .cnt-6-text1{
@@ -199,6 +202,7 @@ html{
     padding: 20px;
     font-weight: bold;
     color: var(--col_red);
+    text-transform: uppercase;
 }
 .content-6-box{
     display: flex;

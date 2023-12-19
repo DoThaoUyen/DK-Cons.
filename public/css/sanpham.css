@@ -21,13 +21,11 @@ h2{
 /***********Content 1*****************/
 h6{
     font-weight: bold;
+    text-transform: uppercase;
+    color: var(--col_red);
 }
 /***********Content san pham 1*****************/
 /*********Part com*************/
-#san-pham-1 h6{
-    color: var(--col_red);
-    font-weight: bold;
-}
 /*********Part 1*************/
 #san-pham-1 .content-2-part-1-box, .content-2-part-2-box{
     padding: 10px 0px;
@@ -41,20 +39,26 @@ h6{
 
 /***********Content san pham 2*****************/
 /*********Part com*************/
-#san-pham-2 h6{
-    color: var(--col_red);
-    font-weight: bold;
-}
 /*********Part 1*************/
-#san-pham-2 .content-2-part-1-box, .content-2-part-2-box{
+/* #san-pham-2 .content-2-part-1-box, .content-2-part-2-box{
     padding: 10px 0px;
+} */
+#san-pham-2 .content-2-part-6{
+    display: flex;
 }
 #san-pham-2 .content-2-part-1 .content-2-part-1-box .content-2-part-1-text{
     text-align: center;
 }
-#san-pham-2 .content-2-part-2 {
-    padding: 5px 0px;
+.content-2-part-6-box-2{
+    display: flex; 
 }
+.content-2-part-6-box-1{
+    padding: 2px;
+}
+#san-pham-2 .content-2-part-2 {
+    /* padding: 5px 0px; */
+}
+
 /*********Part 2*************/
 /* For 1024 Resolution */  
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 

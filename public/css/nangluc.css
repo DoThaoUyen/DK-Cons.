@@ -93,7 +93,7 @@ h2{
 .icon-img {
     border: 2px solid var(--col_red);
     padding: 15px 10px;
-    margin-left: 20px;
+    margin: 0px 5px 0px 5px;
     border-radius: 50%;
     width: 120px;
     height: 100px;
