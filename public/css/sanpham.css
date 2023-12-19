@@ -21,7 +21,7 @@ h2{
 /***********Content 1*****************/
 h6{
     font-weight: bold;
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
     color: var(--col_red);
 }
 /***********Content san pham 1*****************/
