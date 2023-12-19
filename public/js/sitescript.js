@@ -24,13 +24,11 @@ btn_sr.addEventListener('click', function () {
 //header-1
 function iframeLoaded() {
     window.addEventListener('message', function(event){
-        console.log(event.data);
         iFrameID.height = event.data + "px";
         cancas.style.height = event.data + "px";
         l_target_children =  event.data;
         if(l_target_children == "btnTuVan"){
             _clk_menu_page[7].click();
-            console.log(_clk_menu_page[7]);
         }
     }, 
     false);
@@ -164,9 +162,6 @@ _clk_menu_page.forEach(sel_menu => {
             _clk_menu_page[i].style.color = 'rgb(255 255 255)';
         }
         //location.reload();
-        sel_menu.classList.add('active'); 
-        sel_menu.style.color = 'rgb(210 66 75)';
-        window.location.href = window.location.pathname + sel_menu.getAttribute('value');
         if(sel_menu.children.length > 0){
             if(_ck_tab_sp == 0){
                 dropdown_menu.style.display = "none";
@@ -176,15 +171,38 @@ _clk_menu_page.forEach(sel_menu => {
                 _ck_tab_sp = 0;
             }
         }
-        iframeLoaded();
-        window.scrollTo(0, 0);
+        else{
+            sel_menu.classList.add('active'); 
+            sel_menu.style.color = 'rgb(210 66 75)';
+            window.location.href = window.location.pathname + sel_menu.getAttribute('value');
+            iframeLoaded();
+            window.scrollTo(0, 0);
+        }
     })
 });
-
+//hover 
+_style_nav_item.forEach(hover_menu => {
+    hover_menu.addEventListener('mouseover', function(){
+        if(hover_menu.childNodes[1].children.length > 0){
+            dropdown_menu.style.display = "block";
+        }
+    });
+    hover_menu.addEventListener('mouseout', function(){
+        if(hover_menu.childNodes[1].children.length > 0){
+            dropdown_menu.style.display = "none";
+        }
+    });
+});
 dropdown_menu.addEventListener('click', function(e){
-    console.log(e.target.id);
+    for (i = 0; i < _clk_menu_page.length; i++) {
+        _clk_menu_page[i].classList.remove('active');
+        _clk_menu_page[i].style.color = 'rgb(255 255 255)';
+    }
+    e.target.parentNode.parentNode.children[0].classList.add('active'); 
+    e.target.parentNode.parentNode.children[0].style.color = 'rgb(210 66 75)';
     l_clk_dr_menu = e.target.id;
     window.location.href = window.location.pathname + '#' + l_clk_dr_menu;
+    window.scrollTo(0, 0);
     iframeLoaded();
     dropdown_menu.style.display = "none";
     _ck_tab_sp = 1;
