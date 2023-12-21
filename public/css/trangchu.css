@@ -49,7 +49,8 @@ html{
 }
 .content-2 .silde-pic-2 .content-2-pic img{
     max-width: 100%;
-    /* padding: 0 10px; */
+    height: 100%;
+    object-fit: cover;
 }
 .slide-dot-content-2 .slide-dot-2 {
     cursor: pointer;
@@ -95,7 +96,8 @@ html{
 }
 .content-3 .silde-pic-3 .content-3-pic img{
     max-width: 100%;
-    /* padding-right: 20px; */
+    height: 100%;
+    object-fit: cover;
 }
 .slide-dot-content-3 .slide-dot-3 {
     cursor: pointer;
@@ -167,7 +169,7 @@ html{
     font-size: 15px;
 }
 .content-5 .content-5-text{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .content-5 .content-5-text h2{
     color: var(--col_red);
@@ -182,8 +184,17 @@ html{
 .content-5 .pic-5{
     display: flex;
 }
-.content-5 .pic-5-pol{
+.content-5 .pic-5-pol img{
+    max-width: 100%;
+    height: 80%;
+    object-fit: fill;
 }
+.content-5 .content-5-pic img{
+    max-width: 100%;
+    height: 80%;
+    object-fit: scale-down;
+}
+
 /*************Content 6***********/
 .content-6 .content-6-img {
     /* height: 500px; */
@@ -255,12 +266,12 @@ html{
 .content-7-box{
     display: flex;
 }
-.content-7-box .content-7-box-1{
+.content-7-box-1 img{
     /* padding: 0px 10px; */
-}
-.content-7-box-1 .hs-content-7-text{
-    background: rgb(104, 102, 103);
-    padding: 20px 0px;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 30px solid rgb(104, 102, 103);
 }
 
 

@@ -28,7 +28,13 @@ h6{
     display: flex;
 }
 .content-2-box .content-2-box-1{
-    /* padding: 0px 10px; */
+    padding-bottom: 5%;
+}
+.content-2-box .content-2-box-1 img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: fill;
+    padding: 0px 10px;
 }
 .content-2-box-1 .hs-content-2-text{
     /* background: rgb(104, 102, 103); */
@@ -66,5 +72,8 @@ h6{
     /****** content2*********/
     .content-2-box{
         display: block; 
+    }
+    .content-2-box .content-2-box-1{
+        padding-bottom: 20%;
     }
 }
