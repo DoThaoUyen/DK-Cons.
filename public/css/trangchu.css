@@ -291,11 +291,15 @@ html{
 /* iPad */
 /* Orientation : Landscape */  
 @media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {     
-    
+    .content-5 .pic-5-pol, .content-5 .content-5-pic{
+        padding-bottom: 5%;
+    }
 }      
 /* Orientation : Portrait */  
 @media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {  
-      
+    .content-5 .pic-5-pol, .content-5 .content-5-pic{
+        padding-bottom: 5%;
+    }
 }
 /*  Mobile  */
 /* For 480 Resolution */  
@@ -320,5 +324,8 @@ html{
     }
     .content-7-box{
         display: block; 
+    }
+    .content-5 .pic-5-pol, .content-5 .content-5-pic{
+        padding-bottom: 5%;
     }
 }
