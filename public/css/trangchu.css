@@ -51,6 +51,7 @@ html{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    -o-object-fit: cover;
 }
 .slide-dot-content-2 .slide-dot-2 {
     cursor: pointer;
@@ -98,6 +99,7 @@ html{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    -o-object-fit: cover;
 }
 .slide-dot-content-3 .slide-dot-3 {
     cursor: pointer;
