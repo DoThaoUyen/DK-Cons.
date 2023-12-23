@@ -1,15 +1,15 @@
 const txt_sr = document.querySelector('.text-sr');
 const btn_sr = document.querySelector('.btn-sr');
 var cancas = document.querySelector(".canvas-container");
-var iFrameID = document.getElementById("idIframe");
-let navbar_menu = document.getElementById("navbar-menu");
 const dropdown_menu = document.querySelector('.dropdown-menu');
-const _clk_menu = document.getElementById('clk_menu');
 var v_collapse = document.querySelector(".collapse");
 var v_navbar = document.querySelector('.navbar-nav');
 var v_header_btn = document.querySelector('.header-1-btn');
 const _clk_menu_page = document.querySelectorAll('.nav-link');
 const _style_nav_item = document.querySelectorAll('.nav-item');
+var iFrameID = document.getElementById("idIframe");
+let navbar_menu = document.getElementById("navbar-menu");
+const _clk_menu = document.getElementById('clk_menu');
 var l_change_icon = document.getElementById('navbar-toggle');
 let ckl_down_up = 0;
 let l_clk_dr_menu = '';
@@ -212,8 +212,7 @@ let slidesShowTimeout = setTimeout(function slidesShow(){
     
 },500)
 // menu kích thướt nhỏ
-
-_clk_menu.addEventListener('click', function(){
+_clk_menu.onclick = function(){
     if (v_collapse.style.display === "block") {
         v_collapse.style.display = "none";
         v_navbar.style.display = "none";
@@ -224,6 +223,5 @@ _clk_menu.addEventListener('click', function(){
         l_change_icon.children[0].classList.toggle('fa-xmark');
     }
     window.scrollTo(0, 0);
-   
-});
+};
 // When the user scrolls down 20px from the top of the document, slide down the navbar

@@ -10,11 +10,9 @@ window.onresize =  function() {
 const _clk_zalo = document.getElementById('hs-content-2-1-zalo');
 const _clk_fb = document.getElementById('hs-content-2-1-fb');
 
-_clk_fb.addEventListener('click', function(){
+_clk_fb.onclick = function(){
     window.open('https://www.facebook.com/profile.php?id=61554538439652', '_blank');
-   
-});
-_clk_zalo.addEventListener('click', function(){
+};
+_clk_zalo.onclick = function(){
     window.open('https://zalo.me/3850258166399151098', '_blank');
-   
-});
+};
