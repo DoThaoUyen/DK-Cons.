@@ -3,6 +3,7 @@ var target = '';
 window.onload = function(){
     l_height = document.body.scrollHeight;
     parent.postMessage(l_height + 10,'*');
+    console.log(document.body.innerText );
 }
 window.onresize =  function() {
     l_height = document.body.scrollHeight;
@@ -51,10 +52,13 @@ Clk_Dot_2.forEach(element => {
     })
 });
 function showSlides_Content_2(n) {
+
     let i;
     let _number_from = Number(n*3); 
     let _number_to = 3 + Number(n*3); 
     let slides_content_2 = document.querySelectorAll(".content-2-pic");
+    console.log(_number_from);
+    console.log(_number_to);
     for (i = 0; i < slides_content_2.length; i++) {
         slides_content_2[i].style.display = "none";  //ẩn
     }
@@ -81,6 +85,8 @@ function showSlides_Content_3(n) {
     let _number_from = Number(n*3); 
     let _number_to = 3 + Number(n*3); 
     let slides_content_3 = document.querySelectorAll(".content-3-pic");
+    // console.log(_number_from);
+    // console.log(_number_to);
     for (i = 0; i < slides_content_3.length; i++) {
         slides_content_3[i].style.display = "none";  //ẩn
     }
